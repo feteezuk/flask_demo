@@ -2,9 +2,7 @@ from flask import Flask, render_template
 import pandas as pd
 import requests
 #files I've created and imported
-import name_the_city_to_search_for
 from name_the_city_to_search_for import CITY_NAME
-import config
 from config import API_KEY
 
 
