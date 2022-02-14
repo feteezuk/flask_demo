@@ -25,7 +25,7 @@ def blue():
 
 
 
-@app.route('/change/', methods=['GET','POST'])
+@app.route('/change/')
 def he():
     url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY_NAME_INFO}&appid={API_KEY_INFO}"
     response = requests.get(url).json()
