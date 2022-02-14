@@ -8,8 +8,7 @@ from config import API_KEY
 
 app = Flask(__name__)
 
-API_KEY_INFO = API_KEY
-CITY_NAME_INFO = CITY_NAME
+
 
 
 @app.route('/')
@@ -27,6 +26,8 @@ def blue():
 
 @app.route('/change/')
 def he():
+    API_KEY_INFO = API_KEY
+    CITY_NAME_INFO = CITY_NAME
     url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY_NAME_INFO}&appid={API_KEY_INFO}"
     response = requests.get(url).json()
     feels_like = response['main']['feels_like']
