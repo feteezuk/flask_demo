@@ -4,6 +4,7 @@ import requests
 #files I've created and imported
 from secret import API_KEY
 from name_the_city_to_search_for import CITY_NAME
+from config import API_KEY
 
 
 app = Flask(__name__)
