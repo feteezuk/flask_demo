@@ -1,9 +1,11 @@
 from flask import Flask, render_template
 import pandas as pd
 import requests
+import os
 #files I've created and imported
 from name_the_city_to_search_for import CITY_NAME
-from config import API_KEY
+from dotenv import load_dotenv
+load_dotenv()
 
 
 app = Flask(__name__)
@@ -26,7 +28,7 @@ def blue():
 
 @app.route('/change/')
 def he():
-    API_KEY_INFO = API_KEY
+    API_KEY_INFO = os.getenv("API_KEY")
     CITY_NAME_INFO = CITY_NAME
     url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY_NAME_INFO}&appid={API_KEY_INFO}"
     response = requests.get(url).json()
