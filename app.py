@@ -1,11 +1,6 @@
-from flask import Flask, render_template, request
-from flask import jsonify
-import datetime
-from datetime import timedelta
-import requests
-import json
-import os
+from flask import Flask, render_template
 import pandas as pd
+import requests
 #files I've created and imported
 from secret import API_KEY
 from name_the_city_to_search_for import CITY_NAME
@@ -13,8 +8,8 @@ from name_the_city_to_search_for import CITY_NAME
 
 app = Flask(__name__)
 
-API_KEY = API_KEY
-CITY_NAME = CITY_NAME
+API_KEY_INFO = API_KEY
+CITY_NAME_INFO = CITY_NAME
 
 
 @app.route('/')
@@ -32,7 +27,7 @@ def blue():
 
 @app.route('/change/', methods=['GET','POST'])
 def he():
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY_NAME}&appid={API_KEY}"
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY_NAME_INFO}&appid={API_KEY_INFO}"
     response = requests.get(url).json()
     feels_like = response['main']['feels_like']
     temp_min = response['main']['temp_min']

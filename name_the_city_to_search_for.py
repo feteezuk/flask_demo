@@ -1,2 +1,2 @@
-CITY_NAME = "San Francisco"
+CITY_NAME = "France"
 
