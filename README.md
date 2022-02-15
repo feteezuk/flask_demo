@@ -29,7 +29,7 @@ Small Flask Microservice that makes an API call to Open Weather Map, and brings 
 # Go to browser, and type in 
 * http://[PORT ADDRESS]/change
 
-# Go to name_the_city_to_search_for.py file and type in city name, then refresh browser. You should get city weather information. 
+* Go to name_the_city_to_search_for.py file and type in city name, then refresh browser. You should get city weather information. 
 
 
 
