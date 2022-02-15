@@ -1,6 +1,7 @@
+[![Flask Change Microservice Test](https://github.com/feteezuk/flask_demo/actions/workflows/main.yml/badge.svg)](https://github.com/feteezuk/flask_demo/actions/workflows/main.yml)
 
-# flask-change-microservice
-Small Flask Microservice that makes change
+# flask_demo
+Small Flask Microservice that makes an API call to Open Weather Map, and brings back information about current weather information for Specified City. 
 
 *Coursera Lab:  duke-coursera-ccb-lab2*
 
