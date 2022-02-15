@@ -9,7 +9,7 @@ Small Flask Microservice that makes an API call to Open Weather Map, and brings 
 
 ## Invoke Endpoint
 
-* Create virtualenv and source it: `python3 -m venv ~/.fcm && source ~/.venv/bin/fcm`
+* Create virtualenv and source it: `python3 -m venv flask_demo && source flask_demo/bin/activate`
 * Install and Test:  `make all`
 * Run it:  `python app.py`
 
